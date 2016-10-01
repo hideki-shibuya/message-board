@@ -1,7 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
   <head>
-    <title>MessageBoard</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keyword" content="hideki-shibuya,メッセージボード,messageboard">
+    <meta name="description" content="渋谷秀樹がRuby on RailsとBootstrapで作成した、メッセージボードです">
+    <meta name="author" content="hideki shibuya">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shibuya's MessageBoard</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
@@ -11,7 +17,10 @@
     <nav class="navbar">
       <div class="container">
         <div class="navbar-header">
-          <a class="navbar-brand" href="#">MessageBoard</a>
+          <a class="navbar-brand" href="./">
+            <%= image_tag "circle3kashiwa.png", alt: "logo画像" %>
+          </a>
+          <p class="navbar-text">メッセージボード</p>
         </div>
       </div>
     </nav>
